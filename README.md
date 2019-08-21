@@ -4,4 +4,6 @@ The code presented here trains the sketch abstraction model using the RL framewo
 Umar Riaz Muhammad, Yongxin Yang, Timothy M. Hospedales, Tao Xiang and Yi-Zhe Song  
 International Conference on Computer Vision (ICCV), 2019
 
-N.B. you need to download [classifier weights](https://drive.google.com/drive/folders/1qULg2XieNYa_aI4pyK5YxX_4WPdHlNCc?usp=sharing) and place them in *Env/Classifier/TrainedWeights/*.
+N.B. You need to download:
+- [input data files]() and place them in *Env/InData/*.  
+- [classifier weights](https://drive.google.com/drive/folders/1qULg2XieNYa_aI4pyK5YxX_4WPdHlNCc?usp=sharing) and place them in *Env/Classifier/TrainedWeights/*.
