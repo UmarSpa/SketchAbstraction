@@ -1,0 +1,3 @@
+class DataLoader(object):
+	pass
+
