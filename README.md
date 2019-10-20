@@ -17,8 +17,8 @@ ${SkechAbstraction}
 |   |   |-- TrainedWeights
 |-- Output
 ```
-* Download processed sketch dataset - 9 classes from QuickDraw [InData](https://drive.google.com/file/d/1zEQTM3a8a9EOXXdpgRl9hB6574YgC3Xm/view?usp=sharing)]
-* Download pretrained classifier weights [TrainedWeights](https://drive.google.com/drive/folders/1qULg2XieNYa_aI4pyK5YxX_4WPdHlNCc?usp=sharing)]
+* Download processed sketch dataset - 9 classes from QuickDraw [InData](https://drive.google.com/file/d/1zEQTM3a8a9EOXXdpgRl9hB6574YgC3Xm/view?usp=sharing)
+* Download pretrained classifier weights [TrainedWeights](https://drive.google.com/drive/folders/1qULg2XieNYa_aI4pyK5YxX_4WPdHlNCc?usp=sharing)
 
 ## Reference
 ```
