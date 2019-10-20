@@ -2,10 +2,10 @@ import os
 import math
 import numpy as np
 import tensorflow as tf
-from Env.Classifier import ClassifierSketchRNN as ClassSketchRNN
-from Env.Classifier import ClassifierSketchCNN as ClassSketchCNN
+from Source.Classifier import ClassifierSketchRNN as ClassSketchRNN
+from Source.Classifier import ClassifierSketchCNN as ClassSketchCNN
 from utils import global_to_standard, sketch_raster, sketch_raster_info
-from model import Agent
+from agent import Agent
 
 class Env(object):
     def __init__(self, args):
