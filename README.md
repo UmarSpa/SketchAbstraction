@@ -11,10 +11,12 @@ This repo is official Tensorflow implementation of Goal-Driven Sequential Data A
 ## Repo structure
 ```
 ${SkechAbstraction}
-|-- Env
+|-- Source
 |-- |-- InData
 |   |-- Classifier
-|   |   |-- TrainedWeights
+|   |   |-- Weights
+|   |-- Agent
+|   |   |-- Weights
 |-- Output
 ```
 * Download processed sketch dataset - 9 classes from QuickDraw [[InData](https://drive.google.com/file/d/1zEQTM3a8a9EOXXdpgRl9hB6574YgC3Xm/view?usp=sharing)]
