@@ -5,7 +5,7 @@ Author: Muhammad Umar Riaz
 
 ############################### Import ####################################
 import argparse
-from Env.Env import Env
+from env import Env
 
 ############################### Parser ####################################
 parser = argparse.ArgumentParser()
@@ -19,16 +19,16 @@ parser.add_argument('--trainFlag', type=bool, default=True, help='Training flag.
 parser.add_argument('--trainEps', type=int, default=10000, help='Number of training episodes.')
 parser.add_argument('--outFreq', type=int, default=100, help='Agent update frequency.')
 parser.add_argument('--testFreq', type=int, default=1000, help='Agent testing frequency.')
-parser.add_argument('--testStep', type=int, default=100, help='1 for testing on all the test set, other values to set the testing index step.')
-parser.add_argument('--gpuUsage', type=float, default=0.90, help='Amount of gpu usage.')
+parser.add_argument('--testStep', type=int, default=100, help='1 for testing on complete test set, other values to set the testing index step.')
+parser.add_argument('--gpuUsage', type=float, default=0.90, help='Amount of gpu memory usage.')
 # Input/Output Dirs
 parser.add_argument('--dataDir', type=str, default='./Env/InData/', help='Input data directory.')
-parser.add_argument('--outDir', type=str, default='./Output-RNN-25/', help='Output directory.')
+parser.add_argument('--outDir', type=str, default='./Output/RNN-25/', help='Output directory.')
 args = parser.parse_args()
 
 ############################### Main #####################################
-myEnv = Env(args)
+Env = Env(args)
 if args.trainFlag:
-    myEnv.training()
+    Env.training()
 else:
-    myEnv.testing()
+    Env.testing()

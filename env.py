@@ -2,9 +2,9 @@ import os
 import math
 import numpy as np
 import tensorflow as tf
-from .Classifier import ClassifierSketchRNN as ClassSketchRNN
-from .Classifier import ClassifierSketchCNN as ClassSketchCNN
-from dataProcessing import global_to_standard, sketch_raster, sketch_raster_info
+from Env.Classifier import ClassifierSketchRNN as ClassSketchRNN
+from Env.Classifier import ClassifierSketchCNN as ClassSketchCNN
+from utils import global_to_standard, sketch_raster, sketch_raster_info
 from model import Agent
 
 class Env(object):
