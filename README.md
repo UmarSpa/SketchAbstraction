@@ -23,6 +23,18 @@ ${SkechAbstraction}
 * Download pretrained classifier weights [[Weights](https://drive.google.com/drive/folders/1qULg2XieNYa_aI4pyK5YxX_4WPdHlNCc?usp=sharing)]
 * Download pretrained agent weights [[Weights](https://drive.google.com/drive/folders/16MIflRh_iDrFKRbgVH19VzFic2-YXN9q?usp=sharing)]
 
+## Example usage
+Train with CNN classifier and 25% budget size:
+```bash
+python main.py --trainFlag True --classType 'CNN' --budgetVal 0.25 --outDir './Output/RNN-25/'
+```
+Test with CNN classifier and 25% budget size:
+```bash
+python main.py --trainFlag False --classType 'CNN' --budgetVal 0.25 --agentLoading True --agentLoadingFile './Source/Agent/Weights/Agent_Weights_25_RNN.npy' --testStep 1
+```
+
+N.B. For training and testing of models with RNN classifier and budget size of 50%, please change the `--classType` and `--budgetVal` values accordingly.
+
 ## Reference
 ```
 @article{Muhammad_2019_ICCV_GDSA,
