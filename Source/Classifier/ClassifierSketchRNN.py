@@ -25,7 +25,7 @@ def load_model_(model_file):
     print('Loading Classifier Weights - Complete')
     return init_ops
 
-def model_loading(sess, modelDir='./Env/Classifier/Weights/sketchRNN.npy'):
+def model_loading(sess, modelDir='./Source/Classifier/Weights/sketchRNN.npy'):
     init_Class = load_model_(modelDir)
     sess.run(init_Class)
 
