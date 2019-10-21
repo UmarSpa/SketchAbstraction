@@ -17,12 +17,12 @@ def load_model_(model_file):
     d = np.load(model_file).item()
     init_ops = []
     model_variables = [var for var in tf.trainable_variables() if "Classifier" in var.name]
-    print('Loading Classifier Weights')
+    print('\n** Loading Classifier Weights **')
     for var in model_variables:
         varName = var.name
         init_ops.append(var.assign(d[varName]))
         print (varName)
-    print('Loading Classifier Weights - Complete')
+    print('** Loading Classifier Weights - Complete **\n')
     return init_ops
 
 def model_loading(sess, modelDir='./Source/Classifier/Weights/sketchCNN.npy'):

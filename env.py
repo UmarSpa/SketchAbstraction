@@ -178,12 +178,12 @@ class Env(object):
         modelWeights = np.load(modelFile).item()
         initOps = []
         modelVars = [var for var in tf.trainable_variables() if 'AbstractionAgent' in var.name]
-        print('Loading Abstraction Model Weights')
+        print('\n** Loading Abstraction Model Weights **')
         for var in modelVars:
             varName = var.name
             initOps.append(var.assign(modelWeights[varName]))
             print('var - %s' % (varName))
-        print('Loading Abstraction Model Weights - Complete')
+        print('** Loading Abstraction Model Weights - Complete**\n')
         return initOps
 
     def save_model(self):
@@ -209,7 +209,7 @@ class Env(object):
         self.classLens = [9.80, 4.85, 6.43, 8.28, 7.18, 9.08, 9.52, 3.57, 2.89]
         self.numClasses = len(self.classNames)
         self.classBudget = [math.ceil(classLen_ * self.args.budgetVal) for classLen_ in self.classLens]
-        print('Loading Dataset')
+        print('\n** Loading Dataset **')
         self.trainIterators, self.testIterators =  ([] for _ in range(2))
         for idx in range(self.numClasses):
             print('- %s' % (str(self.classNames[idx])))
@@ -222,7 +222,7 @@ class Env(object):
             iterator.raw_data, iterator.seq_len = None, None
             iterator.dataNum = len(iterator.len_strokes)
             self.testIterators.append(iterator)
-        print('Loading Dataset Complete')
+        print('** Loading Dataset Complete **\n')
 
     def initialization(self):
         """Architecture initialization."""
