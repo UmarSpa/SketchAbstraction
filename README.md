@@ -26,14 +26,22 @@ ${SkechAbstraction}
 ## Example usage
 Train with CNN classifier and 25% budget size:
 ```bash
-python main.py --trainFlag True --classType 'CNN' --budgetVal 0.25 --outDir './Output/RNN-25/'
+python main.py --trainFlag --classType 'CNN' --budgetVal 0.25 --outDir './Output/RNN-25/'
 ```
 Test with CNN classifier and 25% budget size:
 ```bash
-python main.py --trainFlag False --classType 'CNN' --budgetVal 0.25 --agentLoading True --agentLoadingFile './Source/Agent/Weights/Agent_Weights_25_RNN.npy' --testStep 1
+python main.py --classType 'CNN' --budgetVal 0.25 --agentLoading --agentLoadingFile './Source/Agent/Weights/Ag
+ent_Weights_25_RNN.npy' --testStep 1
 ```
 
 N.B. For training and testing of models with RNN classifier and budget size of 50%, please change the `--classType` and `--budgetVal` values accordingly.
+
+## Results
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
 
 ## Reference
 ```
