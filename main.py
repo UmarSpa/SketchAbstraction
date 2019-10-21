@@ -11,7 +11,7 @@ from env import Env
 parser = argparse.ArgumentParser()
 # Architecture parameters
 parser.add_argument('--classType', type=str, default='CNN', help='Performance evaluation classifier: RNN, CNN.')
-parser.add_argument('--budgetVal', type=int, default=0.25, help='Size of the fixed budget in terms of perentage wrt full sketch: 0.25, 0.50.')
+parser.add_argument('--budgetVal', type=int, default=0.25, help='Size of the budget: 0.25, 0.50.')
 # Training parameters
 parser.add_argument('--agentLoading', type=bool, default=False, help='Load trained model.')
 parser.add_argument('--agentLoadingFile', type=str, default='./Source/Agent/Agent_Weights_25_RNN.npy', help='Weights filename.')
