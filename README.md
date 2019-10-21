@@ -37,11 +37,9 @@ ent_Weights_25_CNN.npy' --testStep 1
 N.B. For training and testing of models with RNN classifier and budget size of 50%, please change the `--classType` and `--budgetVal` values accordingly.
 
 ## Results
-
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+<p align="center">
+<img src="https://umarriaz.org/wp-content/uploads/2019/10/SketchResults.png" width="400">
+</p>
 
 ## Reference
 ```
