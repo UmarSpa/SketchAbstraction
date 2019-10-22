@@ -4,7 +4,7 @@
 <img src="https://umarriaz.org/wp-content/uploads/2019/10/Preview-ICCV19.png" width="500">
 </p>
 
-## IntroductionTrained
+## Introduction
 
 This repo is official Tensorflow implementation of Goal-Driven Sequential Data Abstraction (ICCV 2019). It contains sketch abstraction part.
 
