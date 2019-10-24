@@ -214,11 +214,11 @@ class Env(object):
         for idx in range(self.numClasses):
             print('- %s' % (str(self.classNames[idx])))
             if self.args.trainFlag:
-                iterator = np.load(self.args.dataDir + str(self.classNames[idx]) + '-train.npy').item()
+                iterator = np.load(self.args.dataDir + str(self.classNames[idx]) + '-train.npy', allow_pickle=True).item()
                 iterator.raw_data, iterator.seq_len = None, None
                 iterator.dataNum = len(iterator.len_strokes)
                 self.trainIterators.append(iterator)
-            iterator = np.load(self.args.dataDir + str(self.classNames[idx]) + '-test.npy').item()
+            iterator = np.load(self.args.dataDir + str(self.classNames[idx]) + '-test.npy', allow_pickle=True).item()
             iterator.raw_data, iterator.seq_len = None, None
             iterator.dataNum = len(iterator.len_strokes)
             self.testIterators.append(iterator)

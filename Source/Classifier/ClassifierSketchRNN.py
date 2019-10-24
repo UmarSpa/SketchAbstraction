@@ -14,7 +14,7 @@ def model_initialization(modelName="Classifier"):
 #   Model Loading
 #####################################################
 def load_model_(model_file):
-    d = np.load(model_file).item()
+    d = np.load(model_file, allow_pickle=True).item()
     init_ops = []
     model_variables = [var for var in tf.trainable_variables() if "Classifier" in var.name]
     print('\n** Loading Classifier Weights **')
