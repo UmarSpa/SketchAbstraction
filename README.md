@@ -23,6 +23,12 @@ ${SkechAbstraction}
 * Download pretrained classifier weights [[Weights](https://drive.google.com/drive/folders/1qULg2XieNYa_aI4pyK5YxX_4WPdHlNCc?usp=sharing)]
 * Download pretrained agent weights [[Weights](https://drive.google.com/drive/folders/16MIflRh_iDrFKRbgVH19VzFic2-YXN9q?usp=sharing)]
 
+## Dependencies
+The requirements.txt file lists all the required dependencies, which can be installed using:
+```bash
+pip install -r requirements.txt
+```
+
 ## Example usage
 Train with CNN classifier and 25% budget size:
 ```bash
