@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This repo is official Tensorflow implementation of Goal-Driven Sequential Data Abstraction (ICCV 2019). It contains sketch abstraction part.
+This repo is official Tensorflow implementation of [Goal-Driven Sequential Data Abstraction (ICCV 2019)](https://arxiv.org/pdf/1907.12336.pdf). It contains sketch abstraction part.
 
 ## Repo structure
 ```
@@ -43,6 +43,8 @@ ent_Weights_25_CNN.npy' --testStep 1
 N.B. For training and testing of models with RNN classifier and budget size of 50%, please change the `--classType` and `--budgetVal` values accordingly.
 
 ## Results
+ Category recognition (acc. %) of the abstracted sketches.
+ 
 |             | RNN (25%) | RNN (50%) | CNN (25%) | CNN (50%) |
 |-------------|:---------:|:---------:|:---------:|:---------:|
 | Human       |   36.66   |   66.73   |   62.08   |   75.90   |
