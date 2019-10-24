@@ -229,7 +229,7 @@ class Env(object):
         with tf.variable_scope('AbstractionAgent'): self.myAgent = Agent()
         self.classModel = ClassSketchRNN.model_initialization() if self.args.classType == 'RNN' else ClassSketchCNN.model_initialization()
 
-        self.sess = tf.Session(config=tf.ConfigProto(gpu_options=tf.GPUOptions(per_process_gpu_memory_fraction=self.args.gpuUsage)))
+        self.sess = tf.Session(config=tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True)))
         self.sess.run(tf.global_variables_initializer())
 
         if self.args.agentLoading: self.sess.run(self.load_model(self.args.agentLoadingFile))
