@@ -24,7 +24,7 @@ ${SkechAbstraction}
 * Download pretrained agent weights [[Weights](https://drive.google.com/drive/folders/16MIflRh_iDrFKRbgVH19VzFic2-YXN9q?usp=sharing)]
 
 ## Dependencies
-The code is implemented in Python3. The requirements.txt file lists all the required dependencies, which can be installed using:
+The requirements.txt file lists all the required dependencies, which can be installed using:
 ```bash
 pip install -r requirements.txt
 ```
