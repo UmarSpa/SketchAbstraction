@@ -175,7 +175,7 @@ class Env(object):
 
     def load_model(self, modelFile):
         """Loading abstraction agent weights."""
-        modelWeights = np.load(modelFile).item()
+        modelWeights = np.load(modelFile, allow_pickle=True).item()
         initOps = []
         modelVars = [var for var in tf.trainable_variables() if 'AbstractionAgent' in var.name]
         print('\n** Loading Abstraction Model Weights **')
