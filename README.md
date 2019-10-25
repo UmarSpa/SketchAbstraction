@@ -51,7 +51,7 @@ N.B. For training and testing of models with RNN classifier and budget size of 5
 | Random      |   22.67   |   45.65   |   41.06   |   65.47   |
 | DSA         |   38.36   |   67.89   |   65.05   |   81.50   |
 | DQSN        |   38.11   |   67.50   |   64.58   |   80.31   |
-| GDSA (Ours) |   50.50   |   71.75   |   71.92   |   86.15   |
+| GDSA (Ours) |   50.50   |   71.75   |   72.16*  |   86.15   |
 
 ## Reference
 ```
